@@ -5,7 +5,7 @@
 }
 #banner .wrap{
     height: 100%;
-    background-image: url("../img/beijing.png"), url("../img/shouji.png");
+    background-image: url("../img/shouji.png"), url("../img/beijing.png");
     background-repeat: no-repeat;
     background-position: 50px -100px, 0 0;
     overflow: hidden;
@@ -110,14 +110,53 @@
     float: left;
 }
 /*banner 结束*/
+#wang{
+    text-align: center;
+}
+#wang .one{
+    margin-top: 10px;
+}
+#tt{
+    background: #c3c3c3;
+    color: #fff;
+    width: 40px;
+    position: relative;
+    top:50%;
+    margin-top:-16px;
+    left:10%;
+    margin-left:1060px;
+    opacity: 0.5;
+}
+#second{
+    width: 950px;
+    height: 471px;
+    margin: 10px auto;
+}
+#second > div{
+    float: left;
+}
 
-
-
-
-
-
-
-
+#cc{
+    width: 360px;
+}
+#cc ul li{
+    float: left;
+    margin:5px 5px;
+}
+#cc ul li a img{
+    width: 170px;
+    height: 170px;
+}
+#dd{
+    width: 275px;
+}
+#ff{
+    width: 250px;
+}
+#ff ul li a img{
+    width: 250px;
+    height: 125px;
+}
 
 
 
