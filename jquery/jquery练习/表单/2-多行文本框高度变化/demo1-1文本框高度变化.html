@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        #container{
+            margin-left: 200px;
+            margin-top: 200px;
+            width: 300px;
+        }
+        #content{
+            width: 100%;
+            float: left;
+            overflow: hidden;
+            border-bottom: 1px solid #000000;
+
+        }
+
+        #content span{
+            width: 40px;
+            height: 20px;
+            background: #fcc;
+            float: left;
+            margin-left: 2px;
+            text-align: center;
+            cursor: pointer;
+            color: #fff;
+        }
+        #text textarea{
+            width: 300px;
+            border:1px solid #000000;
+        }
+    </style>
+</head>
+<body>
+<form action="">
+    <div id="container">
+        <div id="content">
+            <span id="bigger">放大</span>
+            <span id="smaller">缩小</span>
+        </div>
+        <div id="text">
+            <textarea id="comment" cols="30" rows="10">多行文本框高度变化.多行文本框高度变化.多行文本框高度变化.多行文本框高度变化.多行文本框高度变化.多行文本框高度变化.多行文本框高度变化.多行文本框高度变化.多行文
+            </textarea>
+        </div>
+    </div>
+</form>
+<script src="../../../jquery-1.12.4.js"></script>
+    <script src=""></script>
+    <script>
+        $(function() {
+            var $comment = $('#comment');
+            $('#bigger').on('click', function () {
+//                $comment.css({
+//                    height: $comment.height() + 50
+//                });
+//            });
+//            $('#smaller').on('click', function(){
+//                $comment.css({
+//                    height: $comment.height() - 50
+//                    })
+//            })
+                $comment.animate({
+                    height: 500
+
+                }, 2000);
+            });
+            $('#smaller').on('click', function(){
+                $comment.animate({
+                    height: 20
+                }, 2000);
+            });
+        });
+
+    </script>
+
+
+</body>
+</html>
