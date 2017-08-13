@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        li{
+            list-style: none;
+        }
+        #lis{
+            list-style: none;
+            float: left;
+            width: 200px;
+            height: 40px;
+            position: absolute;
+            top: 10px;
+            right:10px;
+        }
+        #lis li{
+            float: left;
+            width: 20px;
+            height: 20px;
+            margin-left: 5px;
+
+        }
+        #header{
+            height: 105px;
+            background: lightgray;
+        }
+        #container{
+            width: 990px;
+            height: 105px;
+            position: relative;
+            margin:0 auto;
+        }
+        .img{
+            position: absolute;
+            left: 0px;
+            top: 0;
+        }
+        #list {
+            background: deepskyblue;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 37px;
+            width: 990px;
+        }
+        #list a{
+            color: #fff;
+            background: deepskyblue;
+            margin-left: 20px;
+            text-align: center;
+            line-height: 37px;
+            text-decoration: none;
+        }
+        .ipt{
+            position: absolute;
+            top:20px;
+            left:200px;
+        }
+        .ipt input{
+            background: #fff;
+            width: 213px;
+            height: 26px;
+            color: lightgray;
+        }
+        #containtery{
+            width: 990px;
+            height: 580px;
+            background: gray;
+            position: relative;
+            margin:0 auto;
+        }
+        #first{
+            width: 186px;
+            height: 529px;
+            background: white;
+            margin-top: 5px;
+            
+        }
+        #first h3{
+            display: block;
+            height: 30px;
+            background: deepskyblue;
+            color: white;
+            padding-left: 5px;
+            padding-top: 5px;
+        }
+        #first h4{
+            padding-top: 5px;
+        }
+        #first ul{
+            margin-top: 5px;
+            padding-top: 4px;
+            border-top: 1px solid#000000;
+            overflow: hidden;
+        }
+        #first li{
+            width: 92px;
+            float: left;
+            margin-top: 3px;
+        }
+        #first h5{
+            display: block;
+            padding-top: 5px;
+        }
+        #stp{
+            width: 550px;
+            height: 321px;
+            position: absolute;
+            top:0;
+            left: 200px;
+        }
+        #tp{
+            float: left;
+        }
+        #tp img{
+            width: 550px;
+            height: 321px;
+            float: left;
+            display: none;
+        }
+        #tp .selected{
+            display: block;
+        }
+        #pacture{
+            position: absolute;
+            top:0;
+            right:0;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div id="container">
+            <a href="" class="img">
+            <img src="../images/logo.gif" alt="JaneShop"/>
+            </a>
+            <a href="" class="ipt">
+            <input type="text" value="请输入商品名称"/>
+            </a>
+            <ul id="lis">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </ul>
+            <div id="list">
+                <a href="">首页</a>
+                <a href="">品牌</a>
+                <a href="">女装</a>
+                <a href="">男装</a>
+                <a href="">鞋包配饰</a>
+
+            </div>
+        </div>
+    </div>
+<div id="containtery">
+    <div id="first">
+        <h3>商品分类</h3>
+        <h4>推荐品牌</h4>
+        <ul>
+            <li>耐克</li>
+            <li style="color: red;">阿迪达斯</li><s class="hot"></s>
+            <li>李宁</li>
+            <li>达芙妮</li>
+            <li>安踏</li>
+            <li>奥康</li>
+            <li style="color: red;">骆驼</li>
+            <li>特步</li>
+        </ul>
+        <h5>女装</h5>
+        <ul>
+            <li>呢大衣</li>
+            <li>T恤</li>
+            <li>羽绒</li>
+            <li>衬衫</li>
+            <li>羊绒衫</li>
+            <li>针织</li>
+            <li>连衣裙</li>
+            <li>皮外套</li>
+        </ul>
+        <h5>男装</h5>
+        <ul>
+            <li>衬衫</li>
+            <li>T恤衫</li>
+            <li>夹克</li>
+            <li>大皮衣</li>
+            <li>风衣</li>
+            <li>牛仔裤</li>
+            <li>西服</li>
+            <li>卫衣</li>
+        </ul>
+        <h5>鞋包配饰</h5>
+        <ul>
+            <li>围巾</li>
+            <li>旅行箱</li>
+            <li>真皮包</li>
+            <li>韩版</li>
+            <li>达芙妮</li>
+            <li>单肩包</li>
+            <li>毛线</li>
+            <li>清仓靴子</li>
+        </ul>
+    </div>
+    <div id="stp">
+        <a href="" id="tp">
+            <img  class="selected" src="../images/ads/1.jpg" alt="">
+            <img src="../images/ads/2.jpg" alt="">
+            <img src="../images/ads/3.jpg" alt="">
+            <img src="../images/ads/4.jpg" alt="">
+            <img src="../images/ads/5.jpg" alt="">
+        </a>
+    </div>
+    <div id="pacture">
+        <img src="../images/upload/20120216.jpg" alt="">
+        <div id="st">
+            <h5>最新动态</h5>
+            <a href="#">[活动]伊伴春迎春大促</a><br>
+            <a href="#">[活动]千百度冬靴新品火热让利</a><br>
+            <a href="#">[活动]COEY秋冬新品全场2.3折起</a><br>
+            <a href="#">[活动]伊伴春谢迎春大促</a><br>
+            <a href="#">[活动]千百度冬靴新品火热让利</a><br>
+        </div>
+    </div>
+
+
+
+
+</div>
+</body>
+</html>
