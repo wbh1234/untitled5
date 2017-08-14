@@ -35,5 +35,6 @@ $(function(){
     // //调整图片的层级关系：z-index
         $("#jnImageroll div a").on("mouseover", function(){
             $(this).addClass("chos").siblings().removeClass("chos");
+            $("#JS_imgWrap img").eq($(this).index()).fadeIn().siblings().fadeOut();
         });
 });
