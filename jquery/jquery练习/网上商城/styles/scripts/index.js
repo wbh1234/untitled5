@@ -37,4 +37,22 @@ $(function(){
             $(this).addClass("chos").siblings().removeClass("chos");
             $("#JS_imgWrap img").eq($(this).index()).fadeIn().siblings().fadeOut();
         });
+        //tooltip
+    // $("#jnNoticeInfo .tooltip").hover(function(e){
+    //     $("<div id='tooltip'> </div>").html($(this).attr("title")).offset({
+    //         top: e.pageY +10,
+    //         left: e.pageX + 10
+    //     }).appendTo("body");
+    // }, function(){
+    //     $("#tooltip").remove().show(500);
+    // }).on("mousemove", function(e){
+    //     $("tooltip").offset({
+    //         top: e.pageY + 10,
+    //         left: e.pageX + 10
+    //     });
+    // });
+    tooltip("#jnNoticeInfo .tooltip");
+    tooltip("#jnCatalog a");
+    //轮播图
+    $()
 });
