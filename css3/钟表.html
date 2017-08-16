@@ -122,11 +122,17 @@
         setInterval(run, 1000);
 
         function run(){
-            var now = new Data();
+            var now = new Date();
             var nowSecond = now.getSeconds();
+            var nowMinute = now.getMinutes() + nowSecond/60;
+            var nowHour = now.getHours() + nowMinute/60;
+
+            oSecond.style.transform = "rotate(" + nowSecond * 6 + "deg)";
+            oMinute.style.transform = "rotate(" + nowMinute * 6 + "deg)";
+            oHour.style.transform = "rotate(" + nowHour * 30 + "deg)";
 
         }
-    })()
+    })();
 </script>
 
 </body>
