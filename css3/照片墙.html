@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        #container{
+            position: relative;
+            top: 200px;
+            left: 400px;
+        }
+        #container img{
+            border:10px solid#CCCCCC;
+            box-shadow: 5px 5px 5px rgba(50, 50, 40, .4);
+            position: absolute;
+            top: 0;
+            left: 0;
+            -webkit-transition:all 1s;
+            -moz-transition: all 1s;
+            -ms-transition: all 1s;
+            -o-transition: all 1s;
+            transition: all 1s;
+        }
+        #container img:first-child{
+            -webkit-transform: rotate(40deg);
+            -moz-transform: rotate(40deg);
+            -ms-transform: rotate(40deg);
+            -o-transform: rotate(40deg);
+            transform: rotate(40deg);
+        }
+        #container img:last-child{
+            -webkit-transform: rotate(-30deg);
+            -moz-transform: rotate(-30deg);
+            -ms-transform: rotate(-30deg);
+            -o-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+        }
+        #container img:hover{
+            -webkit-box-shadow: 10px 10px 5px rgba(50, 50, 50, .4);
+            -moz-box-shadow: 10px 10px 5px rgba(50, 50, 50, .4);
+            box-shadow: 10px 10px 5px rgba(50, 50, 50, .4);
+            z-index:1;
+           transform:scale(1.2) rotate(0deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img src="img01.jpg" alt="">
+        <img src="img02.jpg" alt="">
+    </div>
+</body>
+</html>
