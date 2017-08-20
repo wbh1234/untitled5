@@ -55,14 +55,20 @@
             position: absolute;
             top: 50%;
             margin-top:-30px;
+            cursor: pointer;
+            display: none;
         }
         #next{
-            background-image:url(img/prev.png);
-            left:0;
+            background-image:url(img/next.png);
+            right:0;
+            -webkit-border-radius:8px 0 0 8px;
+            -moz-border-radius:8px 0 0 8px;
+            border-radius:8px 0 0 8px;
         }
         #prev{
-            background-image:url(img/next.png);
-            right: 0;
+            background-image:url(img/prev.png);
+            left: 0;
+            border-radius:0 8px 8px 0;
         }
 
     </style>
@@ -76,6 +82,8 @@
 
             var ROW=4,COL=6, NUM=ROW * COL , BIG_W =750, BIG_H=500, THUMB_W=THUMB_H=125;
             var oContainer = document.getElementById("container");
+            var oNext = document.getElementById("next");
+            var oPrev = document.getElementById("prev");
             var count= 0;//计数器，记录当前图片加载成功的个数
             var aImg;
             var fGapCol;
@@ -168,6 +176,7 @@
                                 oSpan.style.backgroundPosition =-THUMB_W * aImg[i].pos.col+ "px "+(-THUMB_H*aImg[i].pos.row) + "px";
 
                             }
+                            oPrev.style.display=oNext.style.display="block";
 
                         }else{//当前是合并的，要散开
                             for(var i=0;i<aImg.length; i++){
@@ -177,6 +186,7 @@
                                 var oSpan = aImg[i].getElementsByTagName("span")[0];
                                 oSpan.style.opacity = 0;
                             }
+                            oPrev.style.display=oNext.style.display="none";
 
                         }
                         bFlag = !bFlag;
