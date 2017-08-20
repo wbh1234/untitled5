@@ -40,12 +40,37 @@
             height: 100%;
             display: block;
             opacity: 0;
+            -webkit-transition: all 1s ease;
+            -moz-transition: all 1s ease;
+            -ms-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            transition: all 1s ease;
+        }
+        #next,#prev{
+            width: 60px;
+            height: 60px;
+            background-color:#FFFFFF;
+            background-repeat:no-repeat;
+            background-position:center;
+            position: absolute;
+            top: 50%;
+            margin-top:-30px;
+        }
+        #next{
+            background-image:url(img/prev.png);
+            left:0;
+        }
+        #prev{
+            background-image:url(img/next.png);
+            right: 0;
         }
 
     </style>
 </head>
 <body>
     <div id="container"></div>
+    <div id="prev"></div>
+    <div id="next"></div>
     <script>
         (function(){
 
@@ -145,6 +170,13 @@
                             }
 
                         }else{//当前是合并的，要散开
+                            for(var i=0;i<aImg.length; i++){
+                                aImg[i].style.left = (fGapCol + iImgWidth)*aImg[i].pos.col+fGapCol+"px";
+                                aImg[i].style.top = (fGapRow + iImgHeight)*aImg[i].pos.row+fGapRow+"px";
+                                aImg[i].style.transform ="rotate("+(Math.random()*40 - 20)+"deg)";
+                                var oSpan = aImg[i].getElementsByTagName("span")[0];
+                                oSpan.style.opacity = 0;
+                            }
 
                         }
                         bFlag = !bFlag;
