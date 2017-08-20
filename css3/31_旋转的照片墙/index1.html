@@ -198,6 +198,35 @@
 
                 };
 
+                oPrev.onclick=oNext.onclick= function(){
+                    if(this === oPrev){
+                        index--;
+                        if(index==0){
+                            index= NUM;
+                        }
+
+                    }else{
+                        index++;
+                        if(index ==NUM+1){
+                            index = 1;
+                        }
+                    }
+                    var arr = [];
+                    for(var i=0;i<NUM;i++){
+                        arr.push(i);
+                    }
+                    arr.sort(function(){
+                        return Math.random()-0.5;
+
+                    });
+                    console.log(arr);
+                    for(var i=0; i<aImg.length; i++){
+                        var oSpan = aImg[arr[i]].getElementsByTagName("span")[0];
+                        oSpan.style.backgroundImage = "url(img/"+ index +".jpg)";
+                        oSpan.style.transitionDelay = (i + 2) * 50 + "ms";
+                    }
+                };
+
 
 
 
