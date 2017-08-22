@@ -1,0 +1,51 @@
+.carousel-container{
+    width: 520px;
+    height: 280px;
+    position: relative;
+}
+.carousel-tabs{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.carousel-tabs li{
+    width: 20px;
+    height: 20px;
+    background: #000;
+    color: #FFFFFF;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.carousel-tabs .selected{
+    background: orange;
+    color: white;
+}
+.carousel-imgs img{
+    display: none;
+}
+.carousel-imgs .selected{
+    display: block;
+}
+.carousel-arrows{
+    width: 45px;
+    height: 20px;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+
+}
+.carousel-arrows .carousel-prev,.carousel-next{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: #000;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: left;
+    margin-left:2px;
+    text-align: center;
+    line-height: 20px;
+
+}
