@@ -74,8 +74,7 @@
 }
 #content{
     width: 100%;
-    /*background: #0f0f0f;*/
-    background: pink;
+    background: #0f0f0f;
 }
 
 #content #rewarders{
@@ -99,7 +98,7 @@
     position: absolute;
     top: 10px;
     right:8px;
-    background: purple;
+    background: #0f0f0f;
 }
 #reward_star #reward_star_word_1{
     font-size:25px;
@@ -111,31 +110,27 @@
 }
 #log{
     position: absolute;
-    right: 50px;
+    right: 90px;
     bottom: 40px;
 }
 #log .log_register_word{
-    display: block;
+    /*display: block;*/
     width: 120px;
     height: 50px;
     margin-right:10px;
     background: white;
-    border:3px solid #a98e67;
+    border:4px solid #a98e67;
     color: #a98e67;
     font-size:16px;
     text-align: center;
     float: left;
     line-height: 50px;
 }
-#log #log_register_know{
-    float: right;
-    margin-bottom: 0;
-
+#know{
+    position: absolute;
+    right: 0;
+    bottom: 40px;
 }
-/*.log_register .log_register_word{*/
-    /*font-size:20px;*/
-    /*color: #a98e67;*/
-/*}*/
 #log_register_know{
      color: #a98e67;
      text-decoration:none ;
@@ -146,6 +141,7 @@
     text-decoration:none ;
     font-size: 16px;
 }
+
 
 
 
@@ -181,7 +177,7 @@
 @media(max-width: 799px){
     #content .warpper{
         width: 100%;
-        height: 600px;
+        height: 500px;
     }
     /*#content #rewarders{*/
         /*width: 100%;*/
@@ -192,19 +188,33 @@
         left: 30%;
         right: 30%;
     }
-    /*#reward #star,#reward #reward_img{*/
-        /*width: 50%;*/
-    /*}*/
     #content #reward_star{
+        width: 80%;
         position: absolute;
         left: 10%;
+        right: 10%;
         top:220px;
     }
-    /*#content #log{*/
-        /*width: 100%;*/
-    /*}*/
-    /*#log .log_register{*/
-        /*width: 100%;*/
-
-    /*}*/
+    #content #log{
+        width: 76%;
+        position: absolute;
+        left: 12%;
+        right: 12%;
+    }
+    #content #log .log_register_word{
+        width: 100%;
+        margin-top:10px;
+        margin-left:2%;
+        margin-right:2%;
+    }
+    #content #log #log_register_know{
+        position: absolute;
+        bottom: 1%;
+        right: 2%;
+    }
+    #know{
+        position: absolute;
+        bottom: 1%;
+        right: 2%;
+    }
 }
