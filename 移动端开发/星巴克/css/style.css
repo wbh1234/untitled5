@@ -14,3 +14,9 @@ li{
     /*background: #0f0f0f;*/
 
 }
+.warpper_app{
+    width: 1170px;
+    height: 220px;
+    margin:0 auto;
+    position: relative;
+}
