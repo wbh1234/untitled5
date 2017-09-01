@@ -143,13 +143,13 @@
 }
 #app{
     width: 100%;
-    /*height: 220px;*/
+    height: 220px;
     background:url("../img/app_bg.gif") repeat scroll center;
     position: relative;
 }
 #app #app_bg{
-    /*width: 350px;*/
-    /*height: 220px;*/
+    width: 350px;
+    height: 220px;
     margin:0 auto;
     float: left;
 }
@@ -225,23 +225,53 @@
 }
 #wsg{
     width: 100%;
-    height: 220px;
     background:#106e4b;
+    position: relative;
+}
+#wsg_photos1{
+    width: 40%;
+    position: absolute;
+    top: 40px;
+    left:10%;
+    overflow: hidden;
 }
 #wsg_photos1 #wsg_img1{
-    width: 250px;
+    width: 49%;
     height: 125px;
     background:url("../img/wsg-title.png") center no-repeat ;
     background-size:contain;
+    float: left;
+    margin-right:2%;
 }
 #wsg_photos1 #wsg_img2{
-    width: 150px;
-    height: 159px;
+    width:49%;
+    height: 150px;
     background:url("../img/wsg-qrcode.png") center no-repeat;
     background-size:contain ;
-
+    float: left;
 }
-
+#wsg_photos2{
+    width: 40%;
+    position: absolute;
+    top: 40px;
+    right:10%;
+    overflow: hidden;
+}
+#wsg_photos2 #wsg_img3{
+    width: 49%;
+    height: 162px;
+    background: url("../img/wsg-cup.png")center no-repeat;
+    background-size:contain;
+    float: left;
+    margin-right:2%;
+}
+#wsg_photos2 #wsg_img4{
+    width: 49%;
+    height: 144px;
+    background:url("../img/wsg-wording.png")center no-repeat;
+    background-size:contain;
+    float: left;
+}
 
 
 
@@ -323,16 +353,16 @@
     .warpper_app{
         width: 100%;
     }
-    #app_bg{
+    #warpper_app #app_bg{
         width: 20%;
-        position: absolute;
-        bottom: 0;
-        left: 2%;
-        right: 78%;
+        left: 10%;
+        right: 70%;
 
     }
     #app_bg #app_phone{
         height: 150px;
+        position: absolute;
+        bottom: 0;
 
     }
     #app #erweima_introduce{
@@ -371,9 +401,29 @@
     }
     
 }
+@media (max-width:1170px) {
+    .warpper_app_wsg{
+        width: 100%;
+        height: 380px;
+    }
+}
 
 @media (max-width: 769px) {
     #summer_green, #summer_black{
         width: 100%;
+    }
+    #wsg #wsg_photos1{
+        width: 50%;
+        position: absolute;
+        left: 25%;
+        right: 25%;
+
+    }
+    #wsg #wsg_photos2{
+        width: 50%;
+        position: absolute;
+        top:190px;
+        right: 25%;
+        left: 25%;
     }
 }
