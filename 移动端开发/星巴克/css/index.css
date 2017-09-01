@@ -403,13 +403,16 @@
 }
 @media (max-width:1170px) {
     .warpper_app_wsg{
-        width: 100%;
-        height: 380px;
-    }
+          width: 100%;
+      }
 }
 @media (max-width: 769px) {
     #summer_green, #summer_black{
         width: 100%;
+    }
+    .warpper_app_wsg{
+        width: 100%;
+        height: 380px;
     }
     #wsg #wsg_photos1{
         width: 50%;
