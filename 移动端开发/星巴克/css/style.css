@@ -16,7 +16,7 @@ li{
 }
 .warpper_app{
     width: 1170px;
-    height: 220px;
+    /*height: 220px;*/
     margin:0 auto;
     position: relative;
 }
