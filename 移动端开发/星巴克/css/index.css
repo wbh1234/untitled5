@@ -272,6 +272,85 @@
     background-size:contain;
     float: left;
 }
+#watch{
+    width: 100%;
+    overflow: hidden;
+}
+#watch_warpper{
+    width: 1038px;
+    margin:0 auto;
+}
+#web_iwatch{
+    width: 408px;
+    height: 220px;
+    background: url("../img/web-iwatch-cn.png")center no-repeat;
+    background-size:contain;
+    float: left;
+}
+#mobile{
+    display: none;
+    width: 414px;
+    height: 338px;
+    margin:0 auto;
+    background:url("../img/mobile-iwatch-cn.png")center no-repeat;
+    background-size:contain;
+}
+#iwatch_introduce{
+    width: 480px;
+    float: left;
+}
+#iwatch_introduce_word{
+    padding:35px 68px 0 68px;
+    font-size:18px;
+}
+#iwatch_introduce_word #iwatch_know{
+    font-size: 16px;
+    color:#b89f7a;
+}
+#iwatch_introduce_word #iwatch_know_gt{
+    font-size:16px;
+    color: #b89f7a;
+}
+#iwatch_app{
+    width: 150px;
+    height: 207px;
+    float: left;
+}
+#iwatch_app_pacture{
+    width: 130px;
+    height: 130px;
+    background: url("../img/app_qr_20170209.png")center no-repeat;
+    background-size: contain;
+    float: left;
+    margin-left:20px;
+    margin-top:40px;
+
+}
+#iwatch_app_pacture_a{
+    font-size:16px;
+    margin-left:20px;
+}
+#starbucks{
+    width:100%;
+    height: 75px;
+    margin:0 auto;
+    float: left;
+    display:none;
+    /*display:table-cell;*/
+    /*vertical-align: middle;*/
+    /*text-align: center;*/
+}
+#starbucks #starbucks_but{
+    text-align: center;
+}
+#selected{
+    background: #0f0;
+    /*background:#f5f5f5;*/
+}
+#selected_box{
+    background:red;
+    margin:80px 16px;
+}
 
 
 
@@ -385,6 +464,7 @@
 
 
 
+
 }
 
 
@@ -430,3 +510,41 @@
         left: 25%;
     }
 }
+@media(max-width: 334px){
+    #wsg{
+        height: 500px;
+    }
+    #wsg_photos1 #wsg_img1,#wsg_photos2 #wsg_img3{
+        width: 100%;
+        margin-top:0;
+    }
+}
+
+@media (max-width: 1038px) {
+    #watch_warpper{
+        width: 100%;
+        height: 630px;
+    }
+    #web_iwatch{
+        display: none;
+    }
+    #mobile{
+        display: block;
+    }
+    #iwatch_introduce{
+        width: 100%;
+    }
+    #iwatch_introduce #iwatch_introduce_word{
+        padding-top:0;
+        font-size:17px;
+        text-align: center;
+    }
+    #watch #iwatch_app{
+        display: none;
+    }
+    #starbucks{
+        display: block;
+    }
+
+}
+
