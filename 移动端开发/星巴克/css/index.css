@@ -340,9 +340,9 @@
     /*vertical-align: middle;*/
     /*text-align: center;*/
 }
-/*#starbucks #starbucks_but{*/
-    /*text-align: center;*/
-/*}*/
+#starbucks #starbucks_but{
+    text-align: center;
+}
 #selected{
     background: #0f0;
 
@@ -353,6 +353,19 @@
     margin:80px 16px;
 
 }
+#selected_box_word{
+    font-size:28px;
+    text-align: center;
+    padding-top:20px;
+    padding-bottom:20px;
+
+}
+#selected_box_word2 {
+    font-size: 18px;
+    text-align: center;
+    color: #8b8b8b;
+}
+
 
 
 
