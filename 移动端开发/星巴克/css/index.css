@@ -333,23 +333,25 @@
 #starbucks{
     width:100%;
     height: 75px;
-    margin:0 auto;
+    border:3px solid#000000;
     float: left;
-    display:none;
+    display: block;;
     /*display:table-cell;*/
     /*vertical-align: middle;*/
     /*text-align: center;*/
 }
-#starbucks #starbucks_but{
-    text-align: center;
-}
+/*#starbucks #starbucks_but{*/
+    /*text-align: center;*/
+/*}*/
 #selected{
     background: #0f0;
+
     /*background:#f5f5f5;*/
 }
 #selected_box{
     background:red;
     margin:80px 16px;
+
 }
 
 
