@@ -368,11 +368,14 @@
     margin:0 auto;
     width: 1088px;
     height: 280px;
+    align-items: center;
+    justify-content: center;
+    
 }
 #selected_box_two .selected_title{
-    display: block;
-    width: 240px;
-    height: 280px;
+    /*display: block;*/
+    /*width: 240px;*/
+    /*height: 280px;*/
     margin:15px;
     float: left;
     border:1px solid#8b8b8b;
@@ -396,6 +399,38 @@
     text-align: center;
 }
 
+#coffee{
+    background: #000;
+}
+#coffee #coffee_img{
+    width: 50%;
+    text-align: left;
+    background: deeppink;
+}
+#coffee #warrper_coffee{
+    width: 1170px;
+    margin:0 auto;
+    position: relative;
+    
+}
+#coffee #coffee_intro{
+    background: blue;
+    width: 50%;
+    height: 480px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+#coffee_intro #intro_word1{
+    color: #a98e67;
+    font-size: 13px;
+    font-weight: 900;
+    line-height: 22px;
+    letter-spacing: 3px;
+}
 
 
 
@@ -594,14 +629,8 @@
 }
 
 @media (max-width: 1087px) {
-    #selected_box{
+    #selected_box #selected_box_two{
         width: 100%;
-    }
-    #selected_box_two{
-        width: 100%;
-    }
-    #selected_box_two .selected_title{
-        width: 25%;
     }
 
 }
