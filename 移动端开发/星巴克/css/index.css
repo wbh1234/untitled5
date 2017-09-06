@@ -346,7 +346,7 @@
     width: 100%;
 }
 #selected_box{
-    background:red;
+    background:#f5f5f5;
     padding:80px 0;
 
 }
@@ -364,28 +364,46 @@
     margin-bottom:80px;
 }
 #selected_box #selected_box_two{
-    background:deeppink;
+    background:#f5f5f5;
     margin:0 auto;
-    width: 1088px;
-    height: 280px;
-    align-items: center;
+    width:auto;
+    height:auto;
+    text-align: center;
     justify-content: center;
     
 }
 #selected_box_two .selected_title{
-    /*display: block;*/
-    /*width: 240px;*/
-    /*height: 280px;*/
+    display: inline-block;
+    width: 240px;
+    height: 280px;
     margin:15px;
-    float: left;
-    border:1px solid#8b8b8b;
+    /*float: left;*/
+    border:1px solid#c3c3c3;
+    position: relative;
+    background:#f5f5f5;
 
 }
+#selected_box_two .selected_title_box{
+    width: 240px;
+    position: absolute;
+    top:-1px;
+    left:-1px;
 
+
+}
+#selected_box_two .selected_title_box2{
+    width: 240px;
+    position: absolute;
+    bottom:30px;
+    left:-1px;
+
+
+}
 #selected_box_two .selected_pacture{
     width: 240px;
 }
 .selected_title .selected_intro{
+    width: 240px;
     font-size:18px;
     text-align: center;
     margin-top:15px;
@@ -394,6 +412,7 @@
 
 }
 .selected_title .selected_intro2{
+    width: 240px;
     font-size:14px;
     color: #707175;
     text-align: center;
@@ -401,31 +420,44 @@
 
 #coffee{
     width: 100%;
+    height: 608px;
     background: #000;
+}
+#coffee #warrper_coffee{
+    width: 1170px;
+    height: 608px;
+    margin:0 auto;
+    background: green;
+    display: table;
+
+}
+#coffee #warrper_coffee_box{
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+
 }
 #coffee #coffee_img{
     width: 50%;
     text-align: left;
     background: deeppink;
+    float: left;
 }
-#coffee #warrper_coffee{
-    width: 1170px;
-    margin:0 auto;
-    position: relative;
-    
-}
-#coffee #coffee_intro{
+#coffee #coffee_intro {
+    display: table;
     background: skyblue;
     width: 50%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: table-cell;
-    vertical-align: middle;
+    /*height:500px;*/
     text-align: center;
-    line-height:1.2;
+    float: left;
 }
+/*#coffee_intro #coffee_intro_word{*/
+    /*display: table-cell;*/
+    /*vertical-align: middle;*/
+    /*text-align: center;*/
+/*}*/
 #coffee_intro #intro_word1{
     color: #a98e67;
     font-size: 13px;
@@ -437,18 +469,22 @@
 #coffee_intro #intro_word2{
     font-size:18px;
     color: #707070;
-    margin-bottom:14px;
+}
+#coffee_intro #coffee_intro2{
+    /*background: red;*/
+    margin-top:30px;
+    margin-bottom: 30%;
 }
 #coffee_intro2 .intro2{
-    display: inline-block;
-    /*height: 100px;*/
-    padding:14px 40px;
-    font-size:14px;
-    /*background:yellow;*/
-    color: #a98e67;
-    text-align: center;
-    border:2px solid #a98e67;
-}
+     display: inline-block;
+     /*height: 100px;*/
+     padding:14px 40px;
+     font-size:14px;
+     margin-right:15px;
+     color: #a98e67;
+     text-align: center;
+     border:2px solid #a98e67;
+ }
 
 
 
@@ -646,21 +682,63 @@
 
 }
 
-@media (max-width: 1087px) {
-    #selected_box #selected_box_two{
-        width: 100%;
+@media (max-width: 566px) {
+    #selected_box_two .selected_title{
+        display: inline-block;
+        width: 137px;
+        height: 220px;
+        margin:15px;
+        /*float: left;*/
+        border:1px solid#c3c3c3;
+        position: relative;
+        background: #f5f5f5;
+
+    }
+    #selected_box_two .selected_title_box{
+        width: 137px;
+        position: absolute;
+        top:-1px;
+        left:-1px;
+
+
+    }
+    #selected_box_two .selected_title_box2{
+        width: 137px;
+        position: absolute;
+        bottom:30px;
+        left:-1px;
+
+
+    }
+    #selected_box_two .selected_pacture{
+        width: 137px;
+    }
+    .selected_title .selected_intro{
+        width:137px;
+        font-size:18px;
+        text-align: center;
+        margin-top:15px;
+        margin-bottom:15px;
+        color: #000;
+
+    }
+    .selected_title .selected_intro2{
+        width:137px;
+        font-size:14px;
+        color: #707175;
+        text-align: center;
     }
 
 }
-@media(max-width: 1169px){
-    #warrper_coffee{
+@media(max-width: 1168px){
+    #coffee #warrper_coffee, #coffee #warrper_coffee_box{
         width: 100%;
     }
     #coffee #coffee_img{
         text-align: right;
     }
-    #coffee #coffee_img, #coffee #coffee_intro{
-        width: 50%;
-    }
+    /*#coffee #coffee_img, #coffee #coffee_intro{*/
+        /*width: 50%;*/
+    /*}*/
 }
 
