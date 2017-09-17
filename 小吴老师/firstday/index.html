@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul{
+            width: 100%;
+            
+        }
+        .list{
+            margin:30px 40px;
+            width: 380px;
+            height: 80px;
+            float: left;
+            background:blue;
+            list-style: none;
+            position: relative;
+            z-index: 12;
+        }
+        .list::after{
+            content:"";
+            margin:30px 40px;
+            width:380px;
+            height:80px;
+            float: left;
+            list-style: none;none;
+            background:white;
+            /*opacity: 0;*/
+            position: absolute;
+            top:-30px;
+            border-right:1px solid blue;
+            z-index:4;
+
+        }
+    </style>
+</head>
+<body>
+    <ul>
+       <li class="list"></li>
+       <li class="list"></li>
+       <li class="list"></li>
+       <li class="list"></li>
+       <li class="list"></li>
+       <li class="list"></li>
+       <li class="list"></li>
+    </ul>
+    <!--<script>-->
+        <!--&lt;!&ndash;var arr = [1,2,3,2,1,2,2,3,32,1,1];&ndash;&gt;-->
+        <!--&lt;!&ndash;var newArr = [i];&ndash;&gt;-->
+
+        <!--&lt;!&ndash;for(var i=0;i<arr.length;i++){&ndash;&gt;-->
+            <!--&lt;!&ndash;if(newArr.indexOf(arr[i] == -1)){&ndash;&gt;-->
+            <!--&lt;!&ndash;newArr.push(arr[i]);&ndash;&gt;-->
+            <!--&lt;!&ndash;}&ndash;&gt;-->
+        <!--&lt;!&ndash;}&ndash;&gt;-->
+
+
+
+        <!--&lt;!&ndash;console.log(newArr);&ndash;&gt;-->
+    <!--&lt;!&ndash;</script>&ndash;&gt;-->
+</body>
+</html>
