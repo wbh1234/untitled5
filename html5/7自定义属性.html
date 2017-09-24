@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var oDiv = document.getElementById("div1");//相当于jquery里的rop，DOM里看不见
+    oDiv.aa ="123";//定义的
+    console.log(oDIv.aa);
+
+    oDiv.setAttribute("bb","234");//attr，DOM结构里能看见
+    console.log(oDiv.getAttribute("bb"));//自带的
+//html5建议自定义属性用data-开头
+</script>
+
+</body>
+</html>
