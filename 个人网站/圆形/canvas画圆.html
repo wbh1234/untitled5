@@ -18,14 +18,14 @@
 <!--<canvas class="myCanvas" width="130" height="130"></canvas>-->
 <canvas id="myCanvas" width="130" height="130"></canvas>
 <script>
-    function draw(){
+    function draw(e){
         var canvas1 = document.getElementById("myCanvas");
         var ctx1 = canvas1.getContext("2d");
         var x1 = canvas1.width / 2;
         var y1 =canvas1.height / 2;
         var radius1 =50;
         var startAngle1 = 1 * Math.PI;
-        var endAngle1 = 1.2 * Math.PI;
+        var endAngle1 = e* Math.PI;
         var counterClockwise1 = false;
         ctx1.beginPath();
         ctx1.arc(x1,y1,radius1,startAngle1,endAngle1,counterClockwise1);
@@ -48,7 +48,8 @@
         ctx.lineWidth = 15;
         ctx.strokeStyle = "red";
         ctx.stroke();
-        draw();
+        var e=2.2;
+        draw(e);
     };
 
 </script>
