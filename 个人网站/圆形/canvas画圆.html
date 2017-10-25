@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        #myCanvas{
+            background:pink;
+            /*opacity: 0;*/
+        }
+    </style>
+</head>
+<body>
+<!--<canvas class="myCanvas" width="130" height="130"></canvas>-->
+<canvas id="myCanvas" width="130" height="130"></canvas>
+<script>
+    function draw(){
+        var canvas1 = document.getElementById("myCanvas");
+        var ctx1 = canvas1.getContext("2d");
+        var x1 = canvas1.width / 2;
+        var y1 =canvas1.height / 2;
+        var radius1 =50;
+        var startAngle1 = 1 * Math.PI;
+        var endAngle1 = 1.2 * Math.PI;
+        var counterClockwise1 = false;
+        ctx1.beginPath();
+        ctx1.arc(x1,y1,radius1,startAngle1,endAngle1,counterClockwise1);
+        ctx1.lineWidth = 15;
+        ctx1.strokeStyle = "black";
+        ctx1.stroke();
+
+    }
+    window.onload = function() {
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        var x = canvas.width / 2;
+        var y =canvas.height / 2;
+        var radius =50;
+        var startAngle = 1 * Math.PI;
+        var endAngle = 4* Math.PI;
+        var counterClockwise = false;
+        ctx.beginPath();
+        ctx.arc(x,y,radius,startAngle,endAngle,counterClockwise);
+        ctx.lineWidth = 15;
+        ctx.strokeStyle = "red";
+        ctx.stroke();
+        draw();
+    };
+
+</script>
+
+
+</body>
+</html>
