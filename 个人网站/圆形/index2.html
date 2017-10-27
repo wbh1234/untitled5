@@ -7,7 +7,7 @@
             padding: 0px;
         }
         #myCanvas {
-            border: 1px solid #9C9898;
+            background:deepskyblue;
         }
     </style>
     <script>
@@ -17,12 +17,11 @@
             var x = canvas.width / 2;
             var y = canvas.height / 2;
             var radius = 75;
-            var startAngle = 1.1 * Math.PI;
-            var endAngle = 1.9 * Math.PI;
+            var startAngle = 1.5 * Math.PI;
+            var endAngle = 3.1* Math.PI;
             var counterClockwise = false;
             context.beginPath();
-            context.arc(x, y, radius, startAngle, endAngle,
-                counterClockwise);
+            context.arc(x, y, radius, startAngle, endAngle, counterClockwise);
             context.lineWidth = 15;
             // 设置线的颜色
             context.strokeStyle = "black";
