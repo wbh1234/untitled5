@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--<script src="js/jquery-3.2.0.min.js"></script>-->
+</head>
+<body>
+<span id="abc">0</span>
+<script>
+    var o=document.getElementById('abc');
+    var timer;
+    var nowIndex= 0;
+
+//    if(timer==10){
+//        o.innerHTML=10;
+//    }else{
+        play();
+//
+//    }
+function play(){
+//     timer= setInterval('o.innerHTML=parseInt(o.innerHTML)+1;', 500);
+    timer = setInterval(function(){
+        o.innerHTML=parseInt(o.innerHTML)+1;
+        nowIndex++;
+        console.log(nowIndex);
+
+        return nowIndex;
+    },500);
+
+}
+
+
+
+
+
+
+</script>
+
+<!--<p>初始值是0，点击按钮让其增加到10然后停止</p>-->
+<!--<span id="zero">0</span>-->
+<!--<button id="btn">开始</button>-->
+
+<!--<script>-->
+    <!--var oZero = document.getElementById("zero");-->
+    <!--var oBtn = document.getElementById("btn");-->
+    <!--var i = 0;-->
+
+    <!--oBtn.onclick = function(){-->
+        <!--var zero = [];-->
+        <!--for(var num=0;num<10;num++){-->
+            <!--zero.push(i++);-->
+
+        <!--}-->
+        <!--oZero.innerHTML = zero;-->
+    <!--};-->
+
+
+
+
+
+
+
+
+
+
+<!--//    $(function(){-->
+<!--//-->
+<!--//        $("button").click(function(event) {-->
+<!--//            var num = 0;-->
+<!--//            // 调用计时函数-->
+<!--//            var t = setTimeout(timedCount(num),1000);-->
+<!--//            $("button").attr('disabled','disabled');-->
+<!--//        });-->
+<!--//-->
+<!--//        // 循环计时函数, 多次调用自身函数, num为被传递的参数-->
+<!--//        function timedCount(num){-->
+<!--//            num++;-->
+<!--//            $("span").text(num);-->
+<!--//            // 设置条件使停止计时-->
+<!--//            if (num<10) {-->
+<!--//                var t = setTimeout(function(){timedCount(num)},1000);-->
+<!--//            }-->
+<!--//        }-->
+<!--//    })-->
+<!--//</script>-->
+</body>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <input type="radio" v-model="sex" value="l">男
+    <input type="radio" v-model="sex" value="f">女
+    <input type="checkbox" v-model="sport" value="足球">
+
+</div>
+</body>
+<script src="vue.js"></script>
+<script>
+    var nvm =new Vue({
+        el:'#app',
+        data:{
+            sex:'l',
+
+        }
+    })
+</script>
+</html>

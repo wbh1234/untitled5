@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .red{
+            background: red;
+        }
+        .font{
+            font-size:40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <!--<p :id="p1" :text="pp">ppppp</p>-->
+        <!--class style-->
+
+
+        <!--<p :class="{red:isRed, font:isFont}">pppp</p>-->
+        <!--<p :class="classObj">pppp</p>-->
+        <!--<p :class="[classA,classB]">pppp</p>-->
+        <!--<p :style="{background:bgColor}">pppp</p>-->
+        <!--<p :style="styleObj">pppp</p>-->
+        <p :style="[styleA,styleB]">pppp</p>
+    </div>
+
+</body>
+<script src="vue.js"></script>
+<script>
+    var vm = new Vue({
+
+        el:'#app',
+        data:{
+            styleA:{
+              background:'red',
+                color:'green'
+            },
+            styleB:{
+                fontSize:'40px'
+            },
+            styleObj:{
+                background:'red',
+                fontSize:'40px'
+            },
+            bgColor:'red',
+            p1:'p111',
+            pp:'ssss',
+            isRed:true,
+            isFont:true,
+            classObj:{
+                red:true,
+                font:true
+            },
+            classA:'red',
+            classB:'font'
+        }
+    })
+</script>
+</html>
