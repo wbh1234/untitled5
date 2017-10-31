@@ -11,13 +11,13 @@
     var o=document.getElementById('abc');
     var timer;
     var nowIndex= 0;
+    var innerHtml = 10;
 
-//    if(timer==10){
-//        o.innerHTML=10;
-//    }else{
+    if(o.innerHTML ===innerHtml){
+        clearInterval(timer);
+    }else{
         play();
-//
-//    }
+    }
 function play(){
 //     timer= setInterval('o.innerHTML=parseInt(o.innerHTML)+1;', 500);
     timer = setInterval(function(){

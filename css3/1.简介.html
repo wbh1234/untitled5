@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1{
+            width: 200px;
+            height: 200px;
+            background: #ff0000;
+            -webkit-border-radius:50%;//兼容chrome和safsri
+            -moz-border-radius:50%;//firefox -moz-border-radius:;
+            -ms-border-radius:50%;//IE
+            -o-border-radius:50%;//opera
+            border-radius:50%;//标准
+        }
+        /*.aa{*/
+            /*background: #ff0000;*/
+        /*}*/
+        /*.bb{*/
+            /*color: yellow;*/
+        /*}*/
+        /*空格叫后代选择器，>叫亲子代选择器，"+"和"~"兄弟选择器*/
+    /*#ul1 li.aa+li{ //后边的一个兄弟*/
+        li{ //后边的所有兄弟
+            background:red;
+        }
+    </style>
+</head>
+<body>
+<div id="div1"></div>
+<div id="div2"></div>
+<div class="aa bb">divdiv</div>
+<ul id="ul1">
+    <li>001</li>
+    <li class="aa">002</li>
+    <li>003</li>
+    <li>004</li>
+    <li>005</li>
+</ul>
+
+</body>
+</html>
