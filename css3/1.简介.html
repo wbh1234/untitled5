@@ -22,9 +22,40 @@
         /*}*/
         /*空格叫后代选择器，>叫亲子代选择器，"+"和"~"兄弟选择器*/
     /*#ul1 li.aa+li{ //后边的一个兄弟*/
-        li{ //后边的所有兄弟
+         /*#ul1 li.aa~li{*/
+             /*!*后边所有兄弟*!*/
+            /*background:red;*/
+        /*}*/
+         /*ul[id=ul1]{*/
+            /*background: green;*/
+        /*}*/
+        /*#ipt1:focus{*/
+            /*background:pink;*/
+        /*}*/
+        /*#ul1 li:not(.aa){*/
+            /*background:red;*/
+
+        /*}*/
+        /*#ul1 li:first-child{*/
+        /*#ul1 li:last-child{*/
+        /*#ul1 li:only-child{*/
+            /*匹配父元素仅有一个子元素E*/
+        /*#ul1 li:nth-child(2n+1){*/
+        /*#ul1 li:nth-child(odd){*/
+        /*仅选中奇数*/
+        /*#ul1 li:nth-child(2n){*/
+        /*#ul1 li:nth-child(even){*/
+            /*仅选中偶数*/
+        /*#ul1 li:nth-last-child(2){*/
+        /*p:first-of-type{*/
+        /*p:last-of-type{*/
+
+            /*第一次出现的p元素*/
+        p:only-of-type{
             background:red;
+
         }
+        /*HTML中，根元素永远都是HTML*/
     </style>
 </head>
 <body>
@@ -38,6 +69,15 @@
     <li>004</li>
     <li>005</li>
 </ul>
+<input type="text" id="ipt1">
+<div class="test">
+    <div>我是一个div元素</div>
+    <p>我是一个p元素</p>
+    <p>我是一个p元素</p>
+</div>
+<div class="test">
+    <p>ppppp</p>
+</div>
 
 </body>
 </html>
