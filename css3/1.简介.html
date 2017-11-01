@@ -51,7 +51,8 @@
         /*p:last-of-type{*/
 
             /*第一次出现的p元素*/
-        p:only-of-type{
+        /*p:only-of-type{*/
+        p:empty{
             background:red;
 
         }
@@ -70,6 +71,7 @@
     <li>005</li>
 </ul>
 <input type="text" id="ipt1">
+<input type="text" id="ipt2" value="pp" disabled>/*不可编辑的*/
 <div class="test">
     <div>我是一个div元素</div>
     <p>我是一个p元素</p>
@@ -77,6 +79,7 @@
 </div>
 <div class="test">
     <p>ppppp</p>
+    <p></p>
 </div>
 
 </body>
