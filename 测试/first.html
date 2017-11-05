@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        #first{
+            width:50px;
+            height: 100px;
+            background: red;
+            float: left;
+        }
+        #second{
+            float: left;
+            background:yellow;
+            border-top:solid 50px red;
+            border-left:solid 50px red;
+            border-bottom:solid 50px red;
+            border-right:solid 50px blue;
+        }
+    </style>
+</head>
+<body>
+<div id="first">
+
+</div>
+<div id="second">
+
+</div>
+<script>
+//    var a,b,c;
+//    a = b = c = [1,2];
+//    b = [3,4];
+//    c.length = 1;
+//    console.log(a);
+//
+    var a,b;
+(function(){
+    alert(a);
+    alert(b);
+    var a=b=3;
+    alert(a);
+    alert(b);
+    })();
+alert(a);
+alert(b);
+
+
+</script>
+
+</body>
+</html>

@@ -15,20 +15,38 @@
                 <!--{{n}}-->
             <!--</li>-->
         <!--</ul>-->
-        <template v-for="n in 3">
-            <p>ppp</p>
-            <h1>ssss</h1>
-            <span>hhhhhhh</span>
-        </template>
+        <ul>
+            <!--<li v-for="(val,aa,bb) in obj">-->
+                <!--&lt;!&ndash;(值，键，index)&ndash;&gt;-->
+                <!--{{val}},{{aa}},{{bb}}-->
+
+            <!--</li>-->
+            <!--直接通过索引操作数组的方式不能更新视图-->
+            <!--解决方法Vue.set()-->
+            <li v-for="val in arr">
+                {{val}}
+
+            </li>
+        </ul>
+        <!--<template v-for="n in 3">-->
+            <!--<p>ppp</p>-->
+            <!--<h1>ssss</h1>-->
+            <!--<span>hhhhhhh</span>-->
+        <!--</template>-->
     </div>
 
 </body>
 <script  src='vue.js'></script>
 <script>
-    new Vue({
+    var vm = new Vue({
         el:'#app',
         data:{
-            arr:[1,2,3]
+            arr:[1,2,3],
+            obj:{
+                a:1,
+                b:2,
+                c:3
+            }
         }
     })
 </script>
